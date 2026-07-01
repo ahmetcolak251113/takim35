@@ -41,7 +41,7 @@ async def generate_caption(outfit_items: list[dict], style_hint: str = "") -> st
         import google.generativeai as genai
 
         genai.configure(api_key=settings.GEMINI_API_KEY)
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        model = genai.GenerativeModel("gemini-2.0-flash")
 
         # Prompt oluştur
         items_desc = ", ".join(

@@ -12,6 +12,7 @@ import sqlite3
 import uuid
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Optional
 
 logger = logging.getLogger(__name__)
 
@@ -43,7 +44,7 @@ VALUES (?, ?, ?, ?)
 """
 
 
-def _get_connection(db_path: str | Path | None = None) -> sqlite3.Connection:
+def _get_connection(db_path: Optional[Path] = None) -> sqlite3.Connection:
     """Veritabanı bağlantısı oluşturur."""
     path = str(db_path or DB_PATH)
     conn = sqlite3.connect(path)
@@ -82,8 +83,8 @@ def _build_post_records(rows: list[sqlite3.Row]) -> list[dict]:
 
 
 def run_export(
-    conn: sqlite3.Connection | None = None,
-    exports_dir: Path | None = None,
+    conn: Optional[sqlite3.Connection] = None,
+    exports_dir: Optional[Path] = None,
 ) -> list[dict]:
     """
     Ana export fonksiyonu.

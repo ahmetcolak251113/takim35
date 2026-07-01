@@ -14,7 +14,7 @@ class PostCreate(BaseModel):
     """Yeni post oluşturma isteği."""
     user_id: str
     image_url: str
-    caption: str | None = None
+    caption: Optional[str] = None
     outfit_items: list[str] = Field(default_factory=list)  # item_id listesi
     visibility: Literal["public", "followers", "private"] = "public"
     ai_training_consent: bool = False
@@ -46,8 +46,8 @@ class UserResponse(BaseModel):
     user_id: str
     username: str
     display_name: str
-    avatar_url: str | None = None
-    bio: str | None = None
+    avatar_url: Optional[str] = None
+    bio: Optional[str] = None
     followers_count: int = 0
     following_count: int = 0
     created_at: str
@@ -58,7 +58,7 @@ class OutfitItemResponse(BaseModel):
     """Post'a bağlı kombin parçası."""
     item_id: str
     category: str
-    image_url: str | None = None
+    image_url: Optional[str] = None
 
 
 class PostResponse(BaseModel):
@@ -67,9 +67,9 @@ class PostResponse(BaseModel):
     user_id: str
     username: str = ""
     display_name: str = ""
-    avatar_url: str | None = None
+    avatar_url: Optional[str] = None
     image_url: str
-    caption: str | None = None
+    caption: Optional[str] = None
     visibility: str = "public"
     ai_training_consent: bool = False
     likes_count: int = 0
@@ -81,7 +81,7 @@ class PostResponse(BaseModel):
 class FeedResponse(BaseModel):
     """Sayfalandırılmış feed yanıtı."""
     posts: list[PostResponse]
-    next_cursor: str | None = None
+    next_cursor: Optional[str] = None
 
 
 class UserStatsResponse(BaseModel):
@@ -96,4 +96,4 @@ class MessageResponse(BaseModel):
     """Genel başarı/hata mesajı."""
     success: bool
     message: str
-    data: dict | None = None
+    data: Optional[dict] = None

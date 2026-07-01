@@ -127,3 +127,69 @@ CREATE TABLE IF NOT EXISTS training_data_export (
 
 CREATE UNIQUE INDEX IF NOT EXISTS idx_export_post
     ON training_data_export(post_id);
+
+-- ============================================================
+-- 7. KIYAFETLEr  (Dolap modülü)
+-- ============================================================
+CREATE TABLE IF NOT EXISTS kiyafetler (
+    id                INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id           TEXT NOT NULL,
+    tur               TEXT NOT NULL,
+    renk              TEXT NOT NULL,
+    marka             TEXT DEFAULT NULL,
+    beden             TEXT DEFAULT NULL,
+    kumas             TEXT DEFAULT NULL,
+    kesim             TEXT DEFAULT NULL,
+    yaka_tipi         TEXT DEFAULT NULL,
+    kol_tipi          TEXT DEFAULT NULL,
+    desen             TEXT DEFAULT NULL,
+    mevsim            TEXT DEFAULT NULL,
+    stil_etiketi      TEXT DEFAULT NULL,
+    kullanim_sikligi  TEXT DEFAULT NULL,
+    kombin_notu       TEXT DEFAULT NULL,
+    foto_url          TEXT DEFAULT NULL,
+    temiz             INTEGER NOT NULL DEFAULT 1 CHECK (temiz IN (0,1)),
+    created_at        TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now'))
+);
+
+CREATE INDEX IF NOT EXISTS idx_kiyafetler_user
+    ON kiyafetler(user_id);
+
+-- ============================================================
+-- 8. KATEGORİ_DEGERLERİ  (Dolap formu açılır menü seçenekleri)
+-- ============================================================
+CREATE TABLE IF NOT EXISTS kategori_degerleri (
+    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+    tip        TEXT NOT NULL,
+    deger      TEXT NOT NULL,
+    UNIQUE(tip, deger)
+);
+
+-- Başlangıç verileri
+INSERT OR IGNORE INTO kategori_degerleri (tip, deger) VALUES
+  ('tur','tişört'),('tur','gömlek'),('tur','kazak'),('tur','pantolon'),
+  ('tur','etek'),('tur','elbise'),('tur','ceket'),('tur','mont'),
+  ('tur','ayakkabı'),('tur','çanta'),('tur','aksesuar'),
+  ('kumas','pamuk'),('kumas','polyester'),('kumas','keten'),('kumas','yün'),('kumas','denim'),
+  ('kesim','slim fit'),('kesim','regular fit'),('kesim','oversize'),('kesim','skinny'),
+  ('yaka_tipi','bisiklet'),('yaka_tipi','v yaka'),('yaka_tipi','polo'),('yaka_tipi','kapüşon'),
+  ('kol_tipi','kısa kol'),('kol_tipi','uzun kol'),('kol_tipi','kolsuz'),
+  ('desen','düz'),('desen','çizgili'),('desen','ekoseli'),('desen','çiçekli'),('desen','baskılı'),
+  ('mevsim','ilkbahar'),('mevsim','yaz'),('mevsim','sonbahar'),('mevsim','kış'),('mevsim','her mevsim'),
+  ('stil_etiketi','casual'),('stil_etiketi','business'),('stil_etiketi','sport'),('stil_etiketi','elegant'),
+  ('kullanim_sikligi','her gün'),('kullanim_sikligi','sık sık'),('kullanim_sikligi','ara sıra'),('kullanim_sikligi','nadiren');
+
+-- ============================================================
+-- 9. KOMBİN_ÖNERİLERİ
+-- ============================================================
+CREATE TABLE IF NOT EXISTS kombin_onerileri (
+    id            INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id       TEXT NOT NULL,
+    etkinlik      TEXT NOT NULL,
+    hava_durumu   TEXT NOT NULL,
+    stil_tercihi  TEXT DEFAULT NULL,
+    aciklama      TEXT NOT NULL,
+    kiyafet_idler TEXT NOT NULL,  -- JSON array
+    begenildi     INTEGER DEFAULT NULL CHECK (begenildi IN (0,1,NULL)),
+    created_at    TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ', 'now'))
+);

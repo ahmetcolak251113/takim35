@@ -11,6 +11,9 @@ class Settings(BaseSettings):
     GEMINI_API_KEY: Optional[str] = None
     FIREBASE_BUCKET: Optional[str] = None
     CORS_ORIGINS: str = "http://localhost:3000,http://localhost:8081"
+    LLM_PROVIDER: str = "ollama"                           # "ollama" veya "gemini"
+    OLLAMA_BASE_URL: str = "http://localhost:11434"
+    OLLAMA_MODEL: str = "llama3.2"
 
     @property
     def cors_origins_list(self) -> list[str]:
