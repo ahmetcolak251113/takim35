@@ -184,7 +184,7 @@ We believe reducing decision fatigue when selecting an outfit and trying on clot
   <details>
     <summary><h3>Additional Files</h3></summary>
     <ul>
-      <li><strong>Daily Scrum Attachments:</strong> <a href=".Project_Management_Files/sprint1/others">See file</a></li>
+      <li><strong>Daily Scrum Attachments:</strong> <a href="./Project_Management_Files/sprint1/others">See file</a></li>
     </ul>
   </details>
 
