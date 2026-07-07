@@ -102,6 +102,7 @@ We believe reducing decision fatigue when selecting an outfit and trying on clot
     </tr>
     <tr>
       <td style="width: 25%;"><img src="Project_Management_Files/sprint1/app_screenshots/homepage.jpg" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="Project_Management_Files/sprint1/app_screenshots/wardrobe.jpg" style="max-width: 100%; height: auto;"></td>
       <td style="width: 25%;"><img src="Project_Management_Files/sprint1/app_screenshots/ai_stylist.jpg" style="max-width: 100%; height: auto;"></td>
       <td style="width: 25%;"><img src="Project_Management_Files/sprint1/app_screenshots/feed.jpg" style="max-width: 100%; height: auto;"></td>
     </tr>
