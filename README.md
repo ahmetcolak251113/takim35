@@ -9,24 +9,29 @@
 
   ## Team Members
 
-  <table>
+   <table>
     <tr>
+      <th></th>
       <th>Name</th>
       <th>Title</th>
     </tr>
     <tr>
+      <td><img src="Project_Management_Files/general/team/edanur.jpeg" width="50" height="50" /></td>
       <td>Edanur Yılmaz</td>
       <td>Scrum Master</td>
     </tr>
     <tr>
+      <td><img src="Project_Management_Files/general/team/ahmet.png" width="50" height="50" /></td>
       <td>Ahmet Çolak</td>
       <td>Product Owner</td>
     </tr>
     <tr>
+      <td><img src="Project_Management_Files/general/team/ozge.jpeg" width="50" height="50" /></td>
       <td>Özge Sanal</td>
       <td>Developer</td>
     </tr>
     <tr>
+      <td></td>
       <td>Eda Akkaya</td>
       <td>Developer</td>
   </table>
@@ -47,11 +52,11 @@ We believe reducing decision fatigue when selecting an outfit and trying on clot
   <h2>Clothing Identification:</h2>
     <p>Spot allows users to upload their clothing items and tags them automatically. Creates a wardrobe that users can check anytime.</p>
 
-  <h2>Clothing Tracking :</h2>
+  <h2>Clothing Tracking:</h2>
     <p>Spot enables users to track their clothing usage by simply taking a mirror selfie. It identifies the clothes user is wearing and updates usage details.</p>
 
   <h2>Social Platform:</h2>
-    <p>Spot provides users a platform where they can share the outfits they wore that day and enables them to intearct with eachother. </p>
+    <p>Spot, provides a platform where users can share the outfits they wore that day and enables them to intearct with each other. </p>
 
   <h2>LLM:</h2>
     <p>Spot has an LLM integration. It helps users to ask for outfit advice and generate post caption ideas.</p>
@@ -174,7 +179,7 @@ We believe reducing decision fatigue when selecting an outfit and trying on clot
   - Planning and adapting to the SCRUM process was not smooth. Because of this, we couldn't prioritize the tasks and had to split acceptance criterias unconventionally. This; in return, caused errors and functionality issues.
     - Some of the error and improvement subjects:
       - Password reset endpoint
-      - 2FV & hash
+      - 2FA & hashing
       - Profile editing
       - Browsing
       - Image and language processing (LLaVA testing etc.)
@@ -188,6 +193,137 @@ We believe reducing decision fatigue when selecting an outfit and trying on clot
       <li><strong>Daily Scrum Attachments:</strong> <a href="./Project_Management_Files/sprint1/others">See file</a></li>
     </ul>
   </details>
+
+  </details>
+  
+  ---
+
+  <details>
+    <summary><h1>Sprint 2</h1></summary>
+
+
+  <details>
+    <summary><h3>Sprint 2 - App Screenshots</h3></summary>
+  <table style="width: 100%;">
+    
+    <tr>
+      <td colspan="4" style="text-align: center;"><h2>Authentication pages</h2></td>
+    </tr>
+    <tr>
+      <td style="width: 25%;"><img src="Project_Management_Files/sprint2/app_screenshots/login.jpg" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="Project_Management_Files/sprint2/app_screenshots/forgot_password.jpg" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="Project_Management_Files/sprint2/app_screenshots/forgot_password_code.jpg" style="max-width: 100%; height: auto;"></td>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: center;"><h2>Homepage and Feature pages</h2></td>
+    </tr>
+    <tr>
+      <td style="width: 25%;"><img src="Project_Management_Files/sprint2/app_screenshots/homepage.jpg" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="Project_Management_Files/sprint2/app_screenshots/wardrobe.jpg" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="Project_Management_Files/sprint2/app_screenshots/ai_stylist.jpg" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="Project_Management_Files/sprint2/app_screenshots/feed.jpg" style="max-width: 100%; height: auto;"></td>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: center;"><h2>Edit Item page & Post page</h2></td>
+    </tr>
+    <tr>
+     <td style="width: 25%;"><img src="Project_Management_Files/sprint2/app_screenshots/update-delete_item.jpg" style="max-width: 100%; height: auto;"></td>
+     <td style="width: 25%;"><img src="Project_Management_Files/sprint2/app_screenshots/item_deleted_message.jpg" style="max-width: 100%; height: auto;"></td>
+     <td style="width: 25%;"><img src="Project_Management_Files/sprint2/app_screenshots/post.jpg" style="max-width: 100%; height: auto;"></td>
+     <td style="width: 25%;"><img src="Project_Management_Files/sprint2/app_screenshots/edit-delete_post.jpg" style="max-width: 100%; height: auto;"></td>
+    </tr>
+
+     <tr>
+      <td colspan="4" style="text-align: center;"><h2>Profile pages</h2></td>
+    </tr>
+    <tr>
+      <td style="width: 25%;"><img src="Project_Management_Files/sprint2/app_screenshots/edit_profile.jpg" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="Project_Management_Files/sprint2/app_screenshots/profile_podium.jpg" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="Project_Management_Files/sprint2/app_screenshots/profile_saved.jpg" style="max-width: 100%; height: auto;"></td>
+       <td style="width: 25%;"><img src="Project_Management_Files/sprint2/app_screenshots/profile_followers.jpg" style="max-width: 100%; height: auto;"></td>
+    </tr>
+
+    <tr>
+      <td colspan="4" style="text-align: center;"><h2>Profile browsing</h2></td>
+    </tr>
+    <tr>
+     <td style="width: 25%;"><img src="Project_Management_Files/sprint2/app_screenshots/profile_browsing_1.jpg" style="max-width: 100%; height: auto;"></td>
+     <td style="width: 25%;"><img src="Project_Management_Files/sprint2/app_screenshots/profile_browsing_2.jpg" style="max-width: 100%; height: auto;"></td>
+     <td style="width: 25%;"><img src="Project_Management_Files/sprint2/app_screenshots/user_pp_zoom.jpg" style="max-width: 100%; height: auto;"></td>
+    </tr>
+  </table>
+  </details>   
+
+
+  <details>
+    <summary><h3>Sprint 2 - Sprint Board Update Screenshots</h3></summary>
+    <img src="Project_Management_Files/sprint2/board_updates/1.PNG" style="max-width: 100%; height: auto;">
+    <img src="Project_Management_Files/sprint2/board_updates/2.PNG" style="max-width: 100%; height: auto;">
+    <img src="Project_Management_Files/sprint2/board_updates/3.PNG" style="max-width: 100%; height: auto;">
+    <img src="Project_Management_Files/sprint2/board_updates/4.PNG" style="max-width: 100%; height: auto;">
+    <img src="Project_Management_Files/sprint2/board_updates/5.PNG" style="max-width: 100%; height: auto;">
+    <img src="Project_Management_Files/sprint2/board_updates/6.PNG" style="max-width: 100%; height: auto;">
+    <img src="Project_Management_Files/sprint2/board_updates/7.PNG" style="max-width: 100%; height: auto;">
+    <img src="Project_Management_Files/sprint2/board_updates/8.PNG" style="max-width: 100%; height: auto;">
+    <img src="Project_Management_Files/sprint2/board_updates/9.PNG" style="max-width: 100%; height: auto;">
+    <img src="Project_Management_Files/sprint2/board_updates/10.PNG" style="max-width: 100%; height: auto;">
+    <img src="Project_Management_Files/sprint2/board_updates/11.PNG" style="max-width: 100%; height: auto;">
+    <img src="Project_Management_Files/sprint2/board_updates/12.PNG" style="max-width: 100%; height: auto;">
+  </details>
+
+  <details>
+    <summary><h3>Sprint 2 - Burndown Chart</h3></summary>
+    <img src="Project_Management_Files/sprint2/burndown/task_log.PNG" style="max-width: 100%; height: auto;">
+    <img src="Project_Management_Files/sprint2/burndown/burndown_chart.png" style="max-width: 100%; height: auto;">
+  </details>
+
+
+  - **Sprint Notes**:
+    -  `Google sign in` has been added to log in.
+    -   Currently testing `LLaMA` and `LLaVA` with `Ollama`.
+    -  `Core Location` is used for location services (IOS).
+    -  `WeatherKit` is used for Weather API (IOS).
+
+  - **Expected point completion within Sprint**: 500 points
+  - **Point Completion Logic**: `(350 points completed)` During the 1st Sprint Planning; it was estimated, the effort points for image related tasks would be the highest. The initial plan for the Sprint 2 was the image processing implementation. However, unexpected personal occupations and technical limitations caused us to fall behind the target.
+  - **Daily Scrum**: [Google Docs Daily Scrum](https://docs.google.com/document/d/1fE1ez4GB6FFFOSTiUVoP2gNhY51zoZ9jUWxCwGbbJCc/edit?usp=sharing)
+  - **Product Backlog URL:** [Google Docs Task Log](https://docs.google.com/spreadsheets/d/1a6gWuYJjU2Xeyp9FIYJMD71iIYRP7wajtxcoJD4xyhU/edit?usp=sharing)
+    - We decided to document product backlogs in this format as tasks.
+       - ID codes are short for sub categories with addition of Spike(S), Technical(T) & Foundations(F).
+       - Sub categories can be found [here](Project_Management_Files/sprint1/others/estimates.PNG).
+  - **Sprint Review:**  
+     **Participants:** `Edanur Yılmaz`, `Ahmet Çolak`, `Özge Sanal`  `Eda Akkaya`
+    - Ahmet and Özge continued the coordinated effort for the backend and frontend.
+      
+    - Debugging and improving user experience were the leading tasks of this sprint.
+   
+    - Research and analysis of model-pipeline options done by Edanur and Eda has been finished. However, processing power and memory limitations continue to be a problem. (Some considerations include: `BiRefNet`, `SAM2`; `Fashion CLIP`, `Marqo-FashionSigLIP`; `segformer_b2_clothes`; `fashn-ai`)
+   
+    - Özge and Edanur started experimenting and drafting ideas for branding and marketing.    
+      
+    - Although we couldn't complete the targeted points of this sprint, the functionality of the app has improved. Implementation of image processing models (image analysis, segmentation, masking, extraction, tagging) continues. Sprint effort to make a more functional and refined app helped streamline the process.
+ 
+  - **Sprint Retrospective:**  
+   **Participants:** `Edanur Yılmaz`, `Ahmet Çolak`, `Özge Sanal`
+  - Integration of the image processing model needs to be a priority. Other features of the app work fine on a fundamental level. 
+    
+  - Debugging, code cleaning etc. needs to be planned and resolved with a system for more efficient developement.
+    
+  - Core features require the item to have an image and labels. Current process:
+    1. Single flat-lay item photo taken
+    2. Item is segmented, masked, extracted
+    3. Item is labeled  
+    - The outfit labeling process is very similar to item labeling. It requires more processing power and memory. Once the outfit labeling works, different parts of the app can feed each other data. User data cycle can be used to train models and improve performance.
+
+  - If the technical limitations continue to slow down the process, we can integrate alternative solutions. Such as:
+    - User is guided to use Google Lens to find the item they want to add
+        - Not all items are suitable for this use. Old items, unbranded items, worn out items etc. can make it hard for the user to add an item.
+    - User takes a photo of the Care and Content Label of the item
+        - Not all items are suitable for this use. Missing labels, faint labels, labels with too little detail, labels with spread apart detail etc. can make it hard for the user to add an item.
+     
+  - Özge and Edanur will continue to work on branding & marketing.
+ 
+  - VTON implementation will start once the core functions are fit for use.
 
   </details>
   ---
