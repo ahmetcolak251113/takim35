@@ -39,7 +39,8 @@
 # **Product Name**
 
   ### **`Spot`**  
-  
+
+   ![name](Project_Management_Files/general/logo/name.png)
 
   ## Product Description
   Spot is an AI-powered mobile app that turns a user's physical closet into an intelligent digital wardrobe. Tracks users' clothing usage through outfit selfies and lets users share their outfits with others through the social feed. Spot can recommend outfits and lets users virtually try them.
@@ -326,4 +327,96 @@ We believe reducing decision fatigue when selecting an outfit and trying on clot
   - VTON implementation will start once the core functions are fit for use.
 
   </details>
+  
   ---
+  
+   <details>
+      <summary><h1>Sprint 3</h1></summary>
+  
+  
+    <details>
+      <summary><h3>Sprint 3 - Product</h3></summary>
+  [App Introduction]()
+    </details>   
+  
+  
+    <details>
+      <summary><h3>Sprint 3 - Sprint Board Update Screenshots</h3></summary>
+      <img src="Project_Management_Files/sprint3/board_updates/1.PNG" style="max-width: 100%; height: auto;">
+      <img src="Project_Management_Files/sprint3/board_updates/2.PNG" style="max-width: 100%; height: auto;">
+      <img src="Project_Management_Files/sprint3/board_updates/3.PNG" style="max-width: 100%; height: auto;">
+      <img src="Project_Management_Files/sprint3/board_updates/4.PNG" style="max-width: 100%; height: auto;">
+      <img src="Project_Management_Files/sprint3/board_updates/5.PNG" style="max-width: 100%; height: auto;">
+      <img src="Project_Management_Files/sprint3/board_updates/6.PNG" style="max-width: 100%; height: auto;">
+      <img src="Project_Management_Files/sprint3/board_updates/7.PNG" style="max-width: 100%; height: auto;">
+      <img src="Project_Management_Files/sprint3/board_updates/8.PNG" style="max-width: 100%; height: auto;">
+      <img src="Project_Management_Files/sprint3/board_updates/9.PNG" style="max-width: 100%; height: auto;">
+      <img src="Project_Management_Files/sprint3/board_updates/10.PNG" style="max-width: 100%; height: auto;">
+      <img src="Project_Management_Files/sprint3/board_updates/11.PNG" style="max-width: 100%; height: auto;">
+      <img src="Project_Management_Files/sprint3/board_updates/12.PNG" style="max-width: 100%; height: auto;">
+      <img src="Project_Management_Files/sprint3/board_updates/13.PNG" style="max-width: 100%; height: auto;">
+    </details>
+  
+    <details>
+      <summary><h3>Sprint 3 - Burndown Chart</h3></summary>
+      <img src="Project_Management_Files/sprint3/burndown/task_log.PNG" style="max-width: 100%; height: auto;">
+      <img src="Project_Management_Files/sprint3/burndown/burndown_chart.png" style="max-width: 100%; height: auto;">
+    </details>
+  
+  
+  - **Sprint Notes**:
+    - `Geolocation` is used for location services.
+    - `OpenWeather` is used for Weather API.
+    - `moondream2` is used for item labeling through `Ollama`.
+    - `LLaMA 3.2` is still being used as the LLM through `Ollama`.
+  
+  - **Expected point completion within Sprint**: 568 points
+  - **Point Completion Logic**: `(568 points completed)` A total target of 1200 points was set. 282 points were completed in the 1st sprint. 350 points were completed in the 2nd sprint. Target of 420 points was set and 568 points were completed on the 3rd sprint.
+  
+  - **Daily Scrum**: [Google Docs Daily Scrum](https://docs.google.com/document/d/19ZisKIPWCCIm_892CT3c2Vt0jUyj2Mb-0Fl4NR5yufg/edit?usp=sharing)
+  - **Product Backlog URL:** [Google Docs Task Log](https://docs.google.com/spreadsheets/d/1zibrNHU-LbMJ-eCiIiItU45xDQqUj8Sjo1xISFq7VB0/edit?usp=sharing)
+    - We decided to document product backlogs in this format as tasks.
+       - ID codes are short for sub categories with addition of Spike(S), Technical(T) & Foundations(F).
+       - Sub categories can be found [here](Project_Management_Files/sprint1/others/estimates.PNG).
+         
+  - **Sprint Review:**  
+     **Participants:** `Edanur Yılmaz`, `Ahmet Çolak`, `Özge Sanal`
+    - Ahmet and Özge continued the coordinated effort for the backend and frontend.
+    - App navigation is redesigned to improve user experience.
+    - Dark/Light mode is fully integrated.
+    - Logo is finalized.
+    - The outfit builder page is successfully added.
+    - Wardrobe item search is refined.
+    - Labeling of items when adding to the wardrobe is automated.
+      - Labels include: clothing item name, color, style(casual, sport etc.) and pattern…
+    - Outfit items are getting labeled when a post is being made or shared.
+      - Labels are directly used for the ‘post caption’ recommendation (post being made).
+      - Labels are compared to the wardrobe items to track usage of the item (post shared).
+    - Analytics page is created.
+      - Includes: wardrobe item analysis, preference statistics etc.
+    - LLM performance is fine-tuned and chat history is created.
+    - Market and branding research is documented.
+  
+  - **Sprint Retrospective:**  
+   **Participants:** `Edanur Yılmaz`, `Ahmet Çolak`, `Özge Sanal`
+    - Evaluations of all sprints were conducted, and plans were made in line with the application's future goals.
+    - We celebrated the end of the sprint.
+    - Conclusions:
+      - Ease of use and model performance are crucial for the app.
+        - Fine-tuned image processing models and fine-tuned LLM integration with a seamless model orchestration could give the optimal results.
+    - Clearly defining constraints and rules for all the features could help avoid privacy and user/system error problems.
+    - All the features could benefit from each other's data, including user feedback and preferences. Creating a pipeline where each model’s output feeds another one could refine the whole system. (Data Flywheel approach)
+   
+    - **Other Notes**:
+    <details>
+      <summary><h3>Additional Files</h3></summary>
+      <ul>
+        <li><strong>Market research:</strong> <a href="https://docs.google.com/document/d/1uHD_Mvnf6WvSZmGkgiSgvyWS78oLeKhFROMa052ERI4/edit?usp=sharing">Google Docs Document</a>  |  <a href=./Project_Management_Files/sprint3/others/market_research_images>Images</a></li>
+        <li><strong>Competitor Analysis:</strong> <a href="https://docs.google.com/document/d/19XdSmsjTZHXr2t93bT7BMjWXwexN2FkvS0UQHvzie7c/edit?usp=sharing">Google Docs Document</a></li>
+        <li><strong>Mini Survey:</strong> <a href="https://docs.google.com/forms/d/18Xn2ySqwXTPQATNb-avTa0sWvOtlgOJ1qqTTYRiD2gQ/edit#responses">Survey Responses</a></li>
+      </ul>
+    </details>
+
+  </details>
+  ---
+
