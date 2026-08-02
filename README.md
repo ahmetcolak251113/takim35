@@ -336,7 +336,7 @@ We believe reducing decision fatigue when selecting an outfit and trying on clot
   
     <details>
       <summary><h3>Sprint 3 - Product</h3></summary>
-  [App Introduction]()
+  [App Introduction](https://youtu.be/iVFd_VmcobE?si=2AFN-UlRXlLgU3_T)
     </details>   
   
   
